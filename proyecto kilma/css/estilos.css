@@ -1,0 +1,64 @@
+
+body{
+    background-image: url("/images/pexels-pixabay-159400.png");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    position: relative;
+    /* background-image: url(../images/kario\ sin\ kairo.svg); */
+    animation : fadeOut 3s linear, 6s forwards;
+    opacity: 0;
+    z-index: 1;
+    }
+
+
+
+.img2{
+    z-index: 0;
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    border-radius: 15%;
+    width: 500px;
+    animation : imagen 4s linear,8s forwards;
+    position: absolute;
+}
+
+    @keyframes fadeOut {
+        0% { opacity :100; }
+        25% {opacity: 90; }
+        50% {opacity: 0 ; }
+        75% {opacity: 25; }
+        100% { opacity: 100; }
+    } 
+    @keyframes imagen {
+        0% {visibility: hidden; 
+            opacity :0; }
+        50% { visibility: hidden;
+            opacity: 0;}
+        100%{opacity: 1; 
+            visibility: visible;}
+        
+    } 
+    /* @keyframes xd {
+        0% { opacity :0; }
+        25% {opacity: 15; }
+        50% {opacity: 25; }
+        75% {opacity: 50; }
+        100% { opacity: 100; }
+    } */

@@ -1,0 +1,12 @@
+.elemento {
+    animation: mover 2s ease-in-out 1s forwards;
+  }
+  
+  @keyframes mover {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(200px);
+    }
+  }

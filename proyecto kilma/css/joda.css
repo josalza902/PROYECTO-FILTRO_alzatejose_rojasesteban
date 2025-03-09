@@ -1,12 +1,13 @@
-.elemento {
-    animation: mover 2s ease-in-out 1s forwards;
-  }
-  
-  @keyframes mover {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(200px);
-    }
-  }
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}
+.init{
+  width: 700px;
+  height: auto;
+  background-color: white;
+  border-radius: 10%;
+}

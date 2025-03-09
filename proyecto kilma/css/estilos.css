@@ -1,4 +1,4 @@
-
+/* 
 body{
     background-image: url("/images/pexels-pixabay-159400.png");
     background-color: black;
@@ -18,8 +18,8 @@ body{
     align-items: center;
     border-radius: 15%;
     position: relative;
-    /* background-image: url(../images/kario\ sin\ kairo.svg); */
-    animation : fadeOut 3s linear, 6s forwards;
+     /* background-image: url(../images/kario\ sin\ kairo.svg);  */
+    /* animation : fadeOut 3s linear, 6s forwards;
     opacity: 0;
     z-index: 1;
     }
@@ -29,12 +29,12 @@ body{
 .img2{
     z-index: 0;
     display: flex;
-    /* margin: auto; */
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    border-radius: 15%;
-    width: 500px;
+     margin: auto;
+     justify-content: center; 
+     align-items: center; 
+     height: 100vh; 
+     border-radius: 15%;
+     width: 500px;
     animation : imagen 4s linear,8s forwards;
     position: absolute;
 }
@@ -54,7 +54,7 @@ body{
         100%{opacity: 1; 
             visibility: visible;}
         
-    } 
+    }    */
     /* @keyframes xd {
         0% { opacity :0; }
         25% {opacity: 15; }
@@ -62,3 +62,100 @@ body{
         75% {opacity: 50; }
         100% { opacity: 100; }
     } */
+    /* body {
+        background-image: url("../images/pexels-pixabay-159400.png");
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+    }
+    
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+        position: absolute;
+        animation: fadeOut 3s linear forwards;
+        opacity: 1;
+        z-index: 1;
+    }
+    
+    #img2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+        width: 500px;
+        position: absolute;
+        z-index: 0;
+        animation: imagen 4s linear 8s forwards;
+    }
+    
+    @keyframes fadeOut {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 0; }
+    }
+    
+    @keyframes imagen {
+        0% { visibility: hidden; opacity: 0; }
+        50% { visibility: hidden; opacity: 0; }
+        100% { opacity: 1; visibility: visible; }
+    } */
+    body {
+        background-image: url("../images/pexels-pixabay-159400.png");
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+    }
+    
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+        position: absolute;
+        animation: fadeOut 3s linear forwards;
+        opacity: 1;
+        z-index: 1;
+    }
+    
+    #img2 {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+        width: 500px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0; /* Comienza invisible */
+        animation: imagen 3s linear 3s forwards;/*  Se retrasa 3s para iniciar después de fadeOut */
+    }
+    
+    @keyframes fadeOut {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 0; display: none; } /* Se oculta completamente */
+    }
+    
+    @keyframes imagen {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }

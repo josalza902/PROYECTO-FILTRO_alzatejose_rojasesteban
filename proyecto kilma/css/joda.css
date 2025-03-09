@@ -1,13 +1,10 @@
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 
-}
 .init{
   width: 700px;
   height: auto;
   background-color: white;
   border-radius: 10%;
+}
+td div{
+  border: 10px solid gray;
 }

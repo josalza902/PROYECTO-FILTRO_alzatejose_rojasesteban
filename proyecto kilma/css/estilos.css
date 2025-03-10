@@ -155,7 +155,7 @@ body{
         border-radius: 20px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         text-align: center;
-        width: auto;
+        width: 40%;
         height: auto;
         position: absolute;
         z-index: 0;
@@ -169,6 +169,7 @@ body{
         height: auto;
         margin-bottom: 0%; 
         /* margin-bottom: 10px; */
+        padding-bottom: 2px;
         width: 80px;
         margin-bottom: 5px;
     }
@@ -179,6 +180,7 @@ body{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 14px;
         letter-spacing: 2px;
+        padding: 0px 0px 20px 0px
     }
 
     h2{
@@ -192,7 +194,8 @@ body{
         margin-bottom: 20px; 
     }
 .formulario p { 
-    font-size: 20px;
+    color: #666;
+    font-size: 15px;
     align-items: start;
     text-align: left;
 }
@@ -201,6 +204,10 @@ body{
     height: 25px;
     border-radius: 22px;
     margin-bottom: 20px ;
+}
+#servicio-tecnico{
+    color: #666;
+    font-size: 14px;
 }
 #hipervinculo a{
         /* justify-content: center;
@@ -211,7 +218,7 @@ body{
         height: 60px;
         background-color: orange;
         color: white; */
-          /* background-color: #f56600; 
+        /* background-color: #f56600; 
             color: white; Texto blanco
             padding: 12px 24px; Espaciado
             border: none; Sin borde
@@ -239,3 +246,85 @@ body{
         0% { opacity: 0; }
         100% { opacity: 1; }
     }
+
+.div1{
+    background: white;
+        padding: 0px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 50%;
+        height: 55%;
+        position: absolute;
+        animation: div1 3.5s linear forwards;
+        opacity: 1;
+        z-index: 2;
+}
+.div1 img{
+    padding-bottom: 2px;
+    width: 80px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+
+}
+
+.div1 h2{
+    margin-top: 15px;
+}
+
+
+.div2{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+    opacity: 0; /* Comienza invisible */
+    animation: imagen 3s linear 3s forwards;/*  Se retrasa 3s para iniciar después de fadeOut */
+    margin: 0%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.arriba{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px
+    ;
+}
+
+.arriba #kario{
+    width: 40px;
+}
+.centro{
+    padding-left: 60px;
+}
+.center{
+    
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* 9 columnas del mismo ancho */
+    text-align: center;
+}
+#primero{
+    display: block;
+    text-align: left;  
+}
+.imagen3r{
+    position: relative;
+    top: -3%;
+    left: 42%;
+}
+@keyframes div1 {
+    0% { opacity: 1; }
+    25%{opacity: 0.85;}
+    50%{opacity: 0.50;}
+    75%{ opacity: 0.25;}
+    100% { opacity: 0; }
+}
+@keyframes div2 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
